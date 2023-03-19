@@ -3,7 +3,6 @@ body{
     color: #f9f6f6 !important;
     overflow: hidden;
 }
-
 .loadingScreen{
     z-index: 999;
     display: flex;
@@ -27,7 +26,6 @@ body{
 i{
     cursor: pointer;
 }
-
 .meal-layer{
     width: 100%;
     height: 100%;

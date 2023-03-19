@@ -241,7 +241,6 @@ function displayArea(arr) {
 
     newData.innerHTML = cartoona
 }
-
 async function getAreaMeals(area) {
     newData.innerHTML = ""
     $(".inner-loadingScreen").fadeIn(300)
@@ -249,12 +248,10 @@ async function getAreaMeals(area) {
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`)
     response = await response.json()
 
-
     getMeals(response.meals.slice(0, 20))
     $(".inner-loadingScreen").fadeOut(300)
 
 }
-
 
 async function getIngredients() {
     newData.innerHTML = ""
