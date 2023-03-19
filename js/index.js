@@ -99,7 +99,7 @@ function displayDetails(meal) {
     }
 
     let tags = meal.strTags?.split(",")
-    // let tags = meal.strTags.split(",")
+    
     if (!tags) tags = []
 
     let tagsStr = ''
@@ -136,7 +136,6 @@ function displayDetails(meal) {
     newData.innerHTML = cartoona
 }
 
-
 function showSearchInputs() {
     searchPage.innerHTML = `
     <div class="row py-4 ">
@@ -150,7 +149,6 @@ function showSearchInputs() {
 
     newData.innerHTML = ""
 }
-
 
 async function searchByFirstLetter(term) {
     closeSideNav()
